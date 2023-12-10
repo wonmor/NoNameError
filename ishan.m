@@ -1,26 +1,30 @@
-% Input height in feet and inches
-feet = input('Enter your height in feet: ');
-inches = input('Enter your height in inches: ');
+% Read the data from the file
+data = readtable('calorie_data.txt', 'Delimiter', '\t');
 
-% Input weight in pounds
-weight = input('Enter your weight in pounds: ');
+% Create a bar graph
+figure;
+bar(data.Day, [data.Calorie_Intake, data.Calorie_Burned], 'grouped');
+xlabel('Day');
+ylabel('Calories');
+legend('Calorie Intake', 'Calorie Burned');
+title('Daily Calorie Intake vs Calorie Burned');
 
-% Convert height to inches
-height = (feet * 12) + inches;
+% Calculate the average calorie intake and burned
+avg_intake = mean(data.Calorie_Intake);
+avg_burned = mean(data.Calorie_Burned);
 
-% Calculate BMI
-bmi = (weight / (height^2)) * 703;
-
-% Display the BMI
-fprintf('Your BMI is: %.2f\n', bmi);
-
-% Interpret the BMI
-if bmi < 18.5
-    fprintf('You are underweight.\n');
-elseif bmi >= 18.5 && bmi < 24.9
-    fprintf('Your weight is in the healthy range.\n');
-elseif bmi >= 25 && bmi < 29.9
-    fprintf('You are overweight.\n');
+% Determine if it's a caloric deficit, maintenance, or intake
+if avg_intake > avg_burned
+    result = 'caloric intake surplus';
+elseif avg_intake < avg_burned
+    result = 'caloric deficit';
 else
-    fprintf('You are obese.\n');
+    result = 'maintenance';
 end
+
+% Display the results
+fprintf('Average Calorie Intake: %.2f\n', avg_intake);
+fprintf('Average Calorie Burned: %.2f\n', avg_burned);
+fprintf('Result: You are in a %s.\n', result);
+
+
