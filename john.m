@@ -10,13 +10,6 @@ gender = input('Enter your gender (M/F): ', 's'); % 's' indicates input as a str
 % Input age in years
 age = input('Enter your age in years: '); % Add this line to collect the user's age
 
-% Calculate BMR (Basal Metabolic Rate)
-if strcmpi(gender, 'm') % Use strcmpi to compare gender case-insensitively
-    bmr = 66 + (6.23 * weight) + (12.7 * height) - (6.8 * age);
-else
-    bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age);
-end
-
 % Convert height to inches
 height = (feet * 12) + inches;
 
@@ -25,7 +18,6 @@ bmi = (weight / (height^2)) * 703;
 
 % Display the BMI
 fprintf('Your BMI is: %.2f\n', bmi);
-fprintf('Your BMR is: %.2f\n', bmr);
 
 % Calculate BMR (Basal Metabolic Rate)
 if gender == 'm' || gender == 'M'
@@ -33,6 +25,8 @@ if gender == 'm' || gender == 'M'
 else
     bmr = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age);
 end
+
+fprintf('Your BMR is: %.2f\n', bmr);
 
 % Define activity levels and their corresponding multipliers
 activityLevels = {
