@@ -1,23 +1,35 @@
 % Read data from CSV file
 data = readtable('2022-overall-prevalence.csv');
 
-% Extract Prevalence data
+% Extract Prevalence data and convert it to a matrix
 prevalence = data.Prevalence; % Assuming the second column contains prevalence values
+% For a contour plot, we need a 2D matrix. Assuming a simple case where we can just replicate the vector.
+prevalence_matrix = repmat(prevalence', numel(prevalence), 1);
 
-% Create an image to represent the data
+% Generate the x and y coordinates for the plot
+[x, y] = meshgrid(1:numel(prevalence), 1:numel(prevalence));
+
+% Create a contourf plot
 figure; % Creates a new figure window
-imagesc(prevalence'); % Creates a color-coded image with transposed data for correct orientation
-colorbar; % Adds a color bar to indicate the scaling
+contourf(x, y, prevalence_matrix, 20, 'LineStyle', 'none'); % Adjust the number 20 for more or fewer contours
 
-% Customize the axes
+% Add a color bar to the right of the plot
+colorbar;
+
+% Customize the axes (optional, depending on your data's needs)
 ax = gca; % Get current axes
-ax.XTick = 1:size(data, 1); % Set X-ticks to match the number of states
+ax.XTick = 1:numel(prevalence); % Set X-ticks to match the number of data points
 ax.XTickLabel = data.State; % Set X-tick labels to state names
-ax.YTick = []; % Remove Y-ticks as there's only one column
 ax.XTickLabelRotation = 90; % Rotate labels for readability
+ax.YTick = []; % Remove Y-ticks as the y-axis might not be meaningful in this context
 
-% Add title
+% Add title and labels
 title('State-wise Prevalence');
 
-% Invert the colormap so higher values are brighter
-colormap(flipud(hot)); 
+% Adjust colormap
+colormap(jet); % Use jet colormap for bright colors, or choose another if preferred
+caxis([min(prevalence) max(prevalence)]); % Set the limits of the colors to match your data range
+
+% Remove axis lines and ticks for a cleaner look
+box off;
+ax.TickLength = [0 0];
