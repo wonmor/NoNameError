@@ -1,30 +1,23 @@
-% Read the CSV file
+% Read data from CSV file
 data = readtable('2022-overall-prevalence.csv');
 
-% Extract the state names and prevalence values
-states = data.State;
-prevalence = data.Prevalence;
+% Extract Prevalence data
+prevalence = data.Prevalence; % Assuming the second column contains prevalence values
 
-% Convert state names to state abbreviations if necessary
-% You might need a mapping from state names to abbreviations
+% Create an image to represent the data
+figure; % Creates a new figure window
+imagesc(prevalence'); % Creates a color-coded image with transposed data for correct orientation
+colorbar; % Adds a color bar to indicate the scaling
 
-% Initialize a USA map
-figure;
-usamap('conus'); % 'conus' for continental US
+% Customize the axes
+ax = gca; % Get current axes
+ax.XTick = 1:size(data, 1); % Set X-ticks to match the number of states
+ax.XTickLabel = data.State; % Set X-tick labels to state names
+ax.YTick = []; % Remove Y-ticks as there's only one column
+ax.XTickLabelRotation = 90; % Rotate labels for readability
 
-% Loop through the states and plot the data
-for i = 1:length(states)
-    stateName = states{i};
-    value = prevalence(i);
+% Add title
+title('State-wise Prevalence');
 
-    % Find the state's location and plot
-    % Use a colormap to represent different values
-    % You might need to use a function like 'geoshow' or 'patch'
-end
-
-% Adjust color scale and add colorbar
-colormap(jet); % You can choose a different colormap
-colorbar;
-
-% Add labels and title if necessary
-title('Prevalence Heatmap');
+% Invert the colormap so higher values are brighter
+colormap(flipud(hot)); 
