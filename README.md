@@ -33,9 +33,9 @@ The figure below is a bar graph displaying the caloric intake recommendations ba
 
 <img width="838" alt="Screenshot 2023-12-10 at 4 01 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/8f7db6be-3036-445d-8174-f86d4531a314">
 
-<img width="1087" alt="Screenshot 2023-12-10 at 4 04 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/d453b263-432b-43b8-a19d-428d49892a12">
-
 <img width="640" alt="Screenshot 2023-12-10 at 4 09 45 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/e843c22c-ee37-4d0a-8358-dab82c1e1cf4">
+
+<img width="1087" alt="Screenshot 2023-12-10 at 4 04 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/d453b263-432b-43b8-a19d-428d49892a12">
 
 ---
 
