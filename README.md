@@ -1,5 +1,3 @@
-
-![lkFVfeQe_400x400](https://github.com/wonmor/NoNameError/assets/35755386/add7faeb-069b-4a6d-b37e-a5eabf3a3459)
 # NoNameError
 - “Vincit Omnia Veritas” — Truth Always Prevails
 - Team Members: Ishan, Isil, Chester, and John
@@ -38,6 +36,25 @@ The figure below is a bar graph displaying the caloric intake recommendations ba
 <img width="640" alt="Screenshot 2023-12-10 at 4 09 45 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/e843c22c-ee37-4d0a-8358-dab82c1e1cf4">
 
 <img width="838" alt="Screenshot 2023-12-10 at 4 01 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/8f7db6be-3036-445d-8174-f86d4531a314">
+
+---
+
+## 3.8 Sources of the Data We Collected
+
+- **National CDC Website**: https://www.cdc.gov/obesity/data/prevalence-maps.html
+- Published in 2022
+
+---
+```
+MIT License
+Copyright © 2023 Team NoNameError
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
 
 
 
