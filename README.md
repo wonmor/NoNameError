@@ -1,5 +1,5 @@
 # NoNameError
-- “Vincit Omnia Veritas” — Truth Always Prevails
+- *“Vincit Omnia Veritas” — Truth Always Prevails*
 - Team Members: Ishan, Isil, Chester, and John
 - Written on December 11, 2023
 
