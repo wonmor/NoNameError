@@ -1,7 +1,7 @@
 # NoNameError
 - *“Vincit Omnia Veritas” — Truth Always Prevails*
-- Team Members: Ishan, Isil, Chester, and John
-- Written on December 11, 2023
+- Team Members: **Ishan, Isil, Chester, and John**
+- Written on **December 11, 2023**
 
 Our Group Project for MAE10 course offered under the faculty of engineering at UC Irvine.
 
