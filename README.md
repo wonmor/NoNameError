@@ -31,11 +31,11 @@ The last set of data that was used was the survey of sample BMI’s. We wanted t
 ### 3.7 Solution and Demonstration
 The figure below is a bar graph displaying the caloric intake recommendations based on weight management goals (gaining weight, losing weight, and maintaining weight). The second figure is another bar graph that shows the daily caloric intake based on the amount of calories burned for a period of 30 days with the data being read from a data file. Our third figure takes data from a data table displaying the prevalence of obesity by state and plots the data in a contour plot with color bars. The fourth figure takes data from the CSV spreadsheet and groups the average BMIs from each state in a histogram. Finally, our fifth figure is a linear regression plot created using code that plots the line of best fit.
 
+<img width="838" alt="Screenshot 2023-12-10 at 4 01 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/8f7db6be-3036-445d-8174-f86d4531a314">
+
 <img width="1087" alt="Screenshot 2023-12-10 at 4 04 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/d453b263-432b-43b8-a19d-428d49892a12">
 
 <img width="640" alt="Screenshot 2023-12-10 at 4 09 45 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/e843c22c-ee37-4d0a-8358-dab82c1e1cf4">
-
-<img width="838" alt="Screenshot 2023-12-10 at 4 01 42 PM" src="https://github.com/wonmor/NoNameError/assets/35755386/8f7db6be-3036-445d-8174-f86d4531a314">
 
 ---
 
