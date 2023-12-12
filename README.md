@@ -41,7 +41,7 @@ The figure below is a bar graph displaying the caloric intake recommendations ba
 
 ## 3.8 Sources of the Data We Collected
 
-- **Centers for Disease Control and Prevention**: https://www.cdc.gov/obesity/data/prevalence-maps.html
+- **Centers for Disease Control and Prevention (CDC)**: https://www.cdc.gov/obesity/data/prevalence-maps.html
 - Published in 2022
 
 ---
