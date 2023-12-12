@@ -1,7 +1,9 @@
+
+![lkFVfeQe_400x400](https://github.com/wonmor/NoNameError/assets/35755386/add7faeb-069b-4a6d-b37e-a5eabf3a3459)
 # NoNameError
-“Vincit Omnia Veritas” — Truth Always Prevails
-Team Members: Ishan, Isil, Chester, and John
-December 11, 2023
+- “Vincit Omnia Veritas” — Truth Always Prevails
+- Team Members: Ishan, Isil, Chester, and John
+- Written on December 11, 2023
 
 Our Group Project for MAE10 course offered under the faculty of engineering at UC Irvine.
 
